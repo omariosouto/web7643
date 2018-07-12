@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página de Checkout muito louco</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="./css/open-iconic-bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+</head>
+<body>
+
+<!-- Mensagem -->
+<div class="jumbotron jumbotron-fluid">
+    
+    <div class="container">
+        <h1 class="display-4">Ótima escolha!</h1>
+        <p class="lead">Obrigado por comprar com a Mirro Fashion! <br>
+        Preencha seus dados para finalizar a compra</p><!-- ./ fim do lead -->
+    </div><!-- ./fim do container -->
+
+</div><!-- ./fim do jumbotron -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Sua compra é</h2>
+                </div>
+                <!-- Ctrl + Shift + A para comentar :) -->
+                <img src="img/produtos/foto1-verde.png" alt="" class="card-img-top mb-3">
+                <div class="card-body">
+                    <dl>
+                        <dt>Produto</dt>
+                        <dd>Fuzzy Cardigan</dd>
+                
+                        <dt>Cor</dt>
+                        <dd>verde</dd>
+                
+                        <dt>Tamanho</dt>
+                        <dd>38</dd>
+                
+                        <dt>Valor</dt>
+                        <dd>R$ 140,00</dd>
+                    </dl>
+                </div>
+            </div> <!-- ./fecha card -->
+        </div><!-- ./fecha col-md-4 (colunas) -->
+        <div class="col-md-8">
+    
+            <form action="/salvaform" class="row">
+            
+                <div class="col-lg-6">
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                        
+                            <div class="form-group">
+                                <label for="nomeCheckout">Nome</label>
+                                <input
+                                        id="nomeCheckout"
+                                        class="form-control"
+                                        type="text"
+                                        name="nomeCheckout"
+                                        placeholder="Digite seu nome ex: João da Silva">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="emailCheckout">E-mail</label>
+                                <input id="emailCheckout" class="form-control" type="email" name="emailCheckout" placeholder="Digite seu email ex: joao@gmail.com">
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="CPFCheckout">CPF</label>
+                                <input id="CPFCheckout" class="form-control" type="text" name="cpfCheckout" placeholder="Ex: 999.999.999-00">
+                            </div>
+                        
+                        </fieldset>            
+                </div>
+                <div class="col-lg-6">
+                    <fieldset>
+                    <legend>Cartão de Crédito</legend>
+                    
+                    <div class="form-group">
+                        <label for="cartaoECVVCheckout">Cartão e CVV</label>
+                        <input
+                                required
+                                id="cartaoECVVCheckout"
+                                class="form-control"
+                                type="text"
+                                name="cartaoECVVCheckout"
+                                placeholder="1234 1234 1234 1234-999">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="validadeCartaoCheckout">Validade do Cartão</label>
+                        <input
+                                id="validadeCartaoCheckout"
+                                class="form-control"
+                                type="month"
+                                name="validadeCartaoCheckout">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bandeiraCartaoCheckout">Bandeira</label>
+                        <select 
+                            name="bandeiraCartaoCheckout"
+                            class="form-control"
+                            id="bandeiraCartaoCheckout">
+                            <option selected disabled>Selecione uma bandeira</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">MasterCard</option>
+                        </select>
+                    </div>
+                    
+                    
+                    </fieldset>
+                </div>
+
+            <button type="submit" class="btn btn-success btn-lg btn-block">
+                <!-- Importa o open-iconic da pasta CSS -->
+                <!-- <link rel="stylesheet" href="./css/open-iconic-bootstrap.css"> -->
+                <!-- Outros icones em: https://useiconic.com/open -->
+                <span class="oi oi-thumb-up" title="Joinha"></span>
+                Confirme o Pedido
+            </button>
+            
+            </form>
+                   
+        </div><!-- ./fecha col-md-8 (colunas) -->
+    </div> <!-- ./fecha row -->
+</div><!-- ./fecha container -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" style="background:red;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, officia labore corporis optio quas accusantium fugiat animi assumenda iusto consequuntur delectus provident perferendis voluptatibus aut expedita nisi dolore doloribus numquam.</div>
+        <div class="col-md-12" style="background:green;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, officia labore corporis optio quas accusantium fugiat animi assumenda iusto consequuntur delectus provident perferendis voluptatibus aut expedita nisi dolore doloribus numquam.</div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

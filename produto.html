@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto da Mirror Fashion</title>
+    <link rel="stylesheet" href="css/mirrorfashion.css">
+</head>
+<body>
+<header class="container">
+    <h1>
+        <a href="">
+            <img src="img/logo.png" alt="Mirror Fashion">
+        </a>
+    </h1>    
+    
+    <section class="sacola">
+        <h2>Sacola</h2>
+        <p>Nenhum item</p>
+    </section>
+
+    <nav class="menu-opcoes">
+        <a href="#">Minha Conta</a>
+        <a href="#">Lista de desejos</a>
+        <a href="#">Cartão Fidelidade</a>
+        <a href="#">Sobre</a>
+        <a href="#">Ajuda</a>
+    </nav>
+</header>
+<main>
+
+    <section class="produto">
+        <h1>Camiset Ecko Caveira Bad to the bone</h1>
+        <p>por apenas R$ 48,95</p>
+
+        <form action="checkout.html">
+            <fieldset>
+                <legend>Escolha a cor:</legend>
+
+                <input type="radio" name="cor" value="verde" id="verde">
+                <label for="">
+                    <img src="img/produtos/foto1-verde.png" alt="Blazer Verde">
+                </label>
+
+                <input type="radio" name="cor" value="rosa" id="rosa">
+                <label for="">
+                    <img src="img/produtos/foto1-rosa.png" alt="Blazer Rosa">
+                </label>
+
+                <input type="radio" name="cor" value="azul" id="azul">
+                <label for="">
+                    <img src="img/produtos/foto1-azul.png" alt="Blazer Azul">
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o tamanho:</legend>
+                <input type="range" value="42" min="36" max="46" step="2" id="tamanho">
+                <output for="tamanho">42</output>
+            </fieldset>
+
+            <button>Comprar</button>
+
+        </form>
+    </section>
+
+    <section class="detalhes">
+        <h2>Detalhes do produto</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsa unde repellendus consequatur velit. Necessitatibus et nisi deleniti amet voluptates! Libero, impedit animi delectus commodi ipsam hic tempora neque saepe!
+        </p> 
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Características</th>
+                    <th>Detalhes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Modelo</td>
+                    <td>Cardigã 7863</td>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>Algodão Poliester</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    
+
+
+
+</main>
+<footer>
+    <div class="container">
+
+        <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
+    
+        <section class="social">
+            <a href="http://facebook.com">Facebook</a>
+            <a href="http://twitter.com">Twitter</a>
+            <a href="http://plus.google.com">Google Plus</a>
+        </section>
+
+    </div>
+</footer>
+</body>
+</html>

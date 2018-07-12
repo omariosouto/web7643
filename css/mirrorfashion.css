@@ -1,0 +1,275 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos gerais ================================================ */
+body {
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+
+/* Header */
+header {
+    position: relative;
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+    padding-right: 35px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top:0;
+    width: 150px;
+}
+
+.sacola h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu-opcoes {
+    background-color: #ddd;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-opcoes a {
+    border-left: 1px solid #333;
+    border-right: 1px solid #eee;
+    color: #333;
+    display: inline-block;
+    margin-left: -2px;
+    margin-right: -2px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Home */
+
+.busca, 
+.menu-departamentos {
+    background-color: #ccc;
+    float: left;
+    margin-bottom: 10px;
+    width: 220px;
+}
+
+.busca h2,
+.menu-departamentos h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+
+.busca form {
+    padding: 10px;
+}
+
+.busca input {
+    width: 100px;
+}
+
+.menu-departamentos {
+    clear: left;
+}
+
+.menu-departamentos a {
+    background-color: white;
+    color: #333;
+    display: block;
+    font-variant: small-caps;
+    margin: 3px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.banner {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;    
+}
+
+/*Seção produtos home*/
+
+.paineis {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.painel {
+    border-radius: 10px;
+    box-shadow: 20px 10px 10px #333;
+    padding: 10px;
+    width: 49%;
+}
+
+.painel h2 {
+    border-bottom: 1px solid #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.painel li {
+    display: inline-block;
+    margin: 0 -2px 10px;
+    vertical-align: top;
+    width: 33.3%;
+}
+
+.painel a {
+    color: #333;
+    text-decoration: none;
+}
+
+.painel img {
+    border-radius: 70% 30px;
+}
+
+.painel figcaption {
+    /* tratamento em caso de palavras muito grandes*/
+    padding: 5px;
+    word-break: break-all;
+}
+
+.novidades {
+    background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+    background-color: #dcdcf5;
+}
+
+/*Rodapé*/
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+footer .social {
+    float: right;
+}
+
+footer .social a {
+    background-repeat: no-repeat;
+    color: transparent;
+    display: inline-block;
+    height: 32px;
+    overflow: hidden;
+    width: 32px;
+    /* text-indent: -5000px; */
+}
+
+footer .social a[href*="facebook"]{
+    background-image: url(../img/facebook.png);
+}
+
+footer .social a[href*="twitter"]{
+    background-image: url(../img/twitter.png);
+}
+
+footer .social a[href*="google"]{
+    background-image: url(../img/googleplus.png);
+}
+
+/*Mobile*/
+
+/*Até 768px carrega estes estilos*/
+@media (max-width: 768px){
+    .container {
+        width: 98%;
+    }
+}
+
+@media (max-width: 510px){
+    header {
+        margin-top: 62px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .sacola {
+        min-height: 32px;
+        width: 32px;
+    }
+
+    .sacola h2,
+    .sacola p {
+        display: none;
+    }
+}
+
+
+
+
+
+
